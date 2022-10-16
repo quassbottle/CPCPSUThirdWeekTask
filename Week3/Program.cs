@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 // });
 
 builder.Services.AddDbContext<ProductContext>();
-builder.Services.AddScoped<IProductRepository, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

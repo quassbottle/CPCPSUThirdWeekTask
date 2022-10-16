@@ -6,11 +6,11 @@ using Week3.Migration;
 
 namespace Week3.Services;
 
-public class ProductService : IProductRepository
+public class ProductRepository : IProductRepository
 {
     private ProductContext _context;
 
-    public ProductService(ProductContext context)
+    public ProductRepository(ProductContext context)
     {
         this._context = context;
     }
